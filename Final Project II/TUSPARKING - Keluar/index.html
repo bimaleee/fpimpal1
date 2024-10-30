@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUS Parking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <img src="assets/LOGO 1 (1).png" alt="TUSPARKING Logo" class="logo">
+            <div class="header-right">
+                <span class="date">30/10/24</span>
+                <span class="user">AKMAL</span>
+                <button class="logout-button">&#x21bb;</button>
+            </div>
+        </header>
+        <div class="content">
+            <div class="data-parkiran">
+                <h2>DATA PARKIRAN</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari plat nomor...">
+                    <button class="search-button">&#128269;</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PLAT NOMOR</th>
+                            <th>IDENTITAS</th>
+                            <th>TIMESTAMP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="keluar-parkir">
+                <h2>KELUAR PARKIR</h2>
+                <form id="exitForm">
+                    <label for="identity">IDENTITAS PENGENDARA</label>
+                    <input type="text" id="identity" required>
+                    <label for="plate">PLAT NOMOR KENDARAAN</label>
+                    <input type="text" id="plate" required>
+                    <button type="submit" class="submit-button">CATAT</button>
+                </form>
+                <p class="note">
+                    *pastikan untuk mencatat identitas pengendara dan plat nomor kendaraan dengan benar<br>
+                    *jika data tidak ditemukan maka lakukan registrasi terlebih dahulu!<br>
+                    *lakukan konfirmasi ulang bila pengguna menggunakan kendaraan yang berbeda saat keluar!
+                </p>
+            </div>
+        </div>
+        <footer>
+            &copy;copyrightTUSPARKING2024
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
