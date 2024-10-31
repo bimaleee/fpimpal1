@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Kendaraan</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/LOGO 1 (1).png" alt="TUSPARKING Logo" class="logo">
+            <div class="date-info">
+                <span class="date">30/10/24</span>
+                <span class="user">AKMAL</span>
+            </div>
+        </header>
+        <h2>REGISTRASI KENDARAAN</h2>
+        <main>
+            
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nim">NIM / NIP PENGENDARA</label>
+                        <input type="text" id="nim" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plat">PLAT NOMOR KENDARAAN</label>
+                        <input type="text" id="plat" required>
+                        <small>*kategori '1' adalah dosen, '2' adalah mahasiswa, '3' adalah orang luar</small><br>
+                        <small>*pastikan semua yang di-input sesuai dengan data realnya</small><br>
+                        <small>*pastikan plat nomor kendaraan aktif</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nama">NAMA PENGENDARA</label>
+                        <input type="text" id="nama" required>
+                    </div>
+                </div>
+                <div class="form-group category" style="text-align: left;">
+                    <label>KATEGORI</label>
+                    <div>
+                        <input type="radio" id="dosen" name="kategori" value="1" required>
+                        <label for="dosen">1</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mahasiswa" name="kategori" value="2">
+                        <label for="mahasiswa">2</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="orang-luar" name="kategori" value="3">
+                        <label for="orang-luar">3</label>
+                    </div>
+                </div>
+                
+            </form>
+        </main>
+        <button type="button" onclick="submitForm()">CATAT</button>
+        <footer>
+            <p>&copy;copyrightTUSPARKING2024</p>
+        </footer>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
